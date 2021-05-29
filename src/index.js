@@ -119,9 +119,11 @@ function renderLi(breed){
 }
 
 function handleClick(e){
-    if (e.target.style.color === "blue"){
-    e.target.style.color = "black"
-    } else {e.target.style.color = "blue"} 
+    if (e.target.nodeName === 'LI'){
+        if (e.target.style.color === "blue"){
+        e.target.style.color = "black"
+        } else {e.target.style.color = "blue"} 
+    }
 }
 
 function handleChange(e){
